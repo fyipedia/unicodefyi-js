@@ -1,9 +1,11 @@
-# unicodefyi -- Unicode Character Lookup & Encoding Toolkit for JavaScript
+# unicodefyi
+
+[![npm](https://img.shields.io/npm/v/unicodefyi)](https://www.npmjs.com/package/unicodefyi)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue)](https://www.typescriptlang.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Zero Dependencies](https://img.shields.io/badge/dependencies-0-brightgreen)](https://www.npmjs.com/package/unicodefyi)
 
 Pure TypeScript Unicode toolkit -- character info, name search, and 17 encoding formats.
-
-[![npm version](https://img.shields.io/npm/v/unicodefyi)](https://www.npmjs.com/package/unicodefyi)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 Look up any Unicode character's name, category, and block. Encode into 17 formats: UTF-8, UTF-16, UTF-32, HTML (decimal, hex, named entity), CSS, URL encoding, and language-specific escapes for JavaScript, Python, Java, Go, Ruby, Rust, and C/C++. Search ~2,950 characters by name. Includes 90 HTML named entity mappings.
 
@@ -207,9 +209,9 @@ Map of codepoints to official Unicode character names (~2,950 entries).
 - **Python**: [`unicodefyi`](https://pypi.org/project/unicodefyi/) on PyPI -- same 17 encodings + Unicode properties + character search
 - **Web**: [unicodefyi.com](https://unicodefyi.com) -- interactive Unicode character explorer
 
-## FYIPedia Ecosystem
+## FYIPedia Developer Tools
 
-Part of the [FYIPedia](https://fyipedia.com) open-source developer tools family:
+Part of the [FYIPedia](https://github.com/fyipedia) open-source developer tools ecosystem:
 
 | Package | npm | PyPI | Description |
 |---------|-----|------|-------------|
