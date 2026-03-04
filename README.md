@@ -215,9 +215,14 @@ Part of the [FYIPedia](https://fyipedia.com) open-source developer tools family:
 |---------|-----|------|-------------|
 | [unicodefyi](https://unicodefyi.com) | `unicodefyi` | [`unicodefyi`](https://pypi.org/project/unicodefyi/) | Unicode character encodings (17 formats) |
 | [colorfyi](https://colorfyi.com) | `colorfyi` | [`colorfyi`](https://pypi.org/project/colorfyi/) | Color conversions, WCAG contrast, 809 named colors |
-| [symbolfyi](https://symbolfyi.com) | -- | [`symbolfyi`](https://pypi.org/project/symbolfyi/) | Symbol encodings (11 formats) + Unicode properties |
-| [emojifyi](https://emojifyi.com) | -- | [`emojifyi`](https://pypi.org/project/emojifyi/) | 3,953 emoji metadata + 8 encodings |
-| [fontfyi](https://fontfyi.com) | -- | [`fontfyi`](https://pypi.org/project/fontfyi/) | 50 Google Fonts metadata + CSS + pairings |
+| [symbolfyi](https://symbolfyi.com) | `symbolfyi` | [`symbolfyi`](https://pypi.org/project/symbolfyi/) | Symbol encodings (11 formats) + Unicode properties |
+| [emojifyi](https://emojifyi.com) | `emojifyi` | [`emojifyi`](https://pypi.org/project/emojifyi/) | 3,953 emoji metadata + 8 encodings |
+| [fontfyi](https://fontfyi.com) | `fontfyi` | [`fontfyi`](https://pypi.org/project/fontfyi/) | 50 Google Fonts metadata + CSS + pairings |
+| [distancefyi](https://distancefyi.com) | `distancefyi` | [`distancefyi`](https://pypi.org/project/distancefyi/) | Haversine distance, bearing, travel times |
+| [timefyi](https://timefyi.com) | `timefyi` | [`timefyi`](https://pypi.org/project/timefyi/) | Timezone operations, time differences |
+| [namefyi](https://namefyi.com) | `namefyi` | [`namefyi`](https://pypi.org/project/namefyi/) | Korean romanization, Five Elements |
+| [unitfyi](https://unitfyi.com) | `unitfyi` | [`unitfyi`](https://pypi.org/project/unitfyi/) | Unit conversion, 200 units, 20 categories |
+| [holidayfyi](https://holidayfyi.com) | `holidayfyi` | [`holidayfyi`](https://pypi.org/project/holidayfyi/) | Holiday dates, Easter calculation |
 
 ## License
 
