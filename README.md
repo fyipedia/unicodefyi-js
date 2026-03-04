@@ -87,7 +87,7 @@ const limited = searchCharacters("LETTER", 10);
 // Limit results (default: 50)
 ```
 
-Browse all Unicode blocks at [unicodefyi.com/blocks/](https://unicodefyi.com/blocks/).
+Browse all Unicode blocks at [unicodefyi.com/block/](https://unicodefyi.com/block/).
 
 ## 17 Encoding Formats
 
