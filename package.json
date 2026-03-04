@@ -1,0 +1,44 @@
+{
+  "name": "unicodefyi",
+  "version": "0.1.0",
+  "description": "Unicode character lookup and encoding toolkit -- 17 formats (UTF-8, UTF-16, HTML, CSS, JS, Python, Java, Go, Ruby, Rust, C++), character info, name search. Zero dependencies.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "unicode",
+    "character",
+    "encoding",
+    "utf-8",
+    "utf-16",
+    "html-entity",
+    "codepoint",
+    "unicode-lookup"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fyipedia/unicodefyi-js"
+  },
+  "homepage": "https://unicodefyi.com",
+  "license": "MIT",
+  "author": "FYIPedia",
+  "devDependencies": {
+    "tsup": "^8.0",
+    "typescript": "^5.7",
+    "vitest": "^3.0"
+  }
+}
