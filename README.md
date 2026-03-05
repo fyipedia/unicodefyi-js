@@ -19,11 +19,12 @@ Look up any Unicode character's name, category, and block. Encode into 17 format
 
 - [Install](#install)
 - [Quick Start](#quick-start)
-- [Character Info](#character-info)
-- [Character Search](#character-search)
-- [17 Encoding Formats](#17-encoding-formats)
-- [Supplementary Plane Characters (Emoji)](#supplementary-plane-characters-emoji)
-- [HTML Entity Lookup](#html-entity-lookup)
+- [What You Can Do](#what-you-can-do)
+  - [Character Lookup](#character-lookup)
+  - [Character Search](#character-search)
+  - [17 Encoding Formats](#17-encoding-formats)
+  - [Supplementary Plane Characters (Emoji)](#supplementary-plane-characters-emoji)
+  - [HTML Entity Lookup](#html-entity-lookup)
 - [Raw Data Access](#raw-data-access)
 - [API Reference](#api-reference)
 - [Learn More About Unicode](#learn-more-about-unicode)
@@ -75,9 +76,11 @@ console.log(arrows[0].character);  // "\u2190"
 lookupHtmlEntity("&hearts;"); // "\u2665"
 ```
 
-## Character Info
+## What You Can Do
 
-Get the Unicode name, general category, and block for any character in the bundled dataset (~2,950 common BMP characters covering Latin, Greek, Cyrillic, symbols, arrows, math operators, dingbats, and more):
+### Character Lookup
+
+Get the Unicode name, general category, and block for any character in the bundled dataset (~2,950 common BMP characters covering Latin, Greek, Cyrillic, symbols, arrows, math operators, dingbats, and more). The Unicode Standard assigns every character a unique name, a two-letter general category code, and a block designation indicating which range of the codespace it belongs to.
 
 ```typescript
 import { charInfo } from "unicodefyi";
@@ -92,9 +95,9 @@ info?.codepoint    // 65
 info?.encodings    // all 17 encoding formats
 ```
 
-Explore characters interactively at [unicodefyi.com/search/](https://unicodefyi.com/search/).
+Learn more: [Unicode Character Search](https://unicodefyi.com/search/) · [Unicode Blocks](https://unicodefyi.com/block/) · [Scripts](https://unicodefyi.com/script/)
 
-## Character Search
+### Character Search
 
 Search the bundled character name dataset by substring:
 
@@ -109,9 +112,11 @@ const limited = searchCharacters("LETTER", 10);
 // Limit results (default: 50)
 ```
 
-Browse all Unicode blocks at [unicodefyi.com/block/](https://unicodefyi.com/block/).
+Learn more: [Unicode Block Browser](https://unicodefyi.com/block/) · [REST API Docs](https://unicodefyi.com/developers/)
 
-## 17 Encoding Formats
+### 17 Encoding Formats
+
+Encode any Unicode character into **17 different representations** covering web standards, programming languages, and binary formats. This is the most comprehensive encoding toolkit available -- covering 6 more formats than symbolfyi's 11, adding Go, Ruby, Rust, C/C++, UTF-32, and decimal output.
 
 | Format | Field | Example (`U+2713`) | Description |
 |--------|-------|---------------------|-------------|
@@ -133,9 +138,9 @@ Browse all Unicode blocks at [unicodefyi.com/block/](https://unicodefyi.com/bloc
 | UTF-16 BE | `utf16beBytes` | `27 13` | Big-endian UTF-16 bytes |
 | UTF-32 BE | `utf32beBytes` | `00 00 27 13` | Big-endian UTF-32 bytes |
 
-See all encoding formats for any character at [unicodefyi.com/developers/](https://unicodefyi.com/developers/).
+Learn more: [Character Lookup Tool](https://unicodefyi.com/tools/lookup/) · [REST API Docs](https://unicodefyi.com/developers/) · [OpenAPI Spec](https://unicodefyi.com/api/openapi.json)
 
-## Supplementary Plane Characters (Emoji)
+### Supplementary Plane Characters (Emoji)
 
 Characters above U+FFFF (including emoji) are fully supported. Language-specific
 escapes automatically use the correct format:
@@ -154,9 +159,9 @@ enc.utf16beBytes;  // "d8 3d de 00"        (surrogate pair bytes)
 enc.utf32beBytes;  // "00 01 f6 00"
 ```
 
-## HTML Entity Lookup
+### HTML Entity Lookup
 
-Resolve named HTML entities back to their characters:
+Resolve **90 named HTML entities** back to their characters. The HTML specification defines named entities as shortcuts for commonly used characters -- `&amp;` for ampersand, `&hearts;` for the heart suit, `&euro;` for the euro sign, and more.
 
 ```typescript
 import { lookupHtmlEntity } from "unicodefyi";
@@ -167,6 +172,8 @@ lookupHtmlEntity("&check;");  // "\u2713" (CHECK MARK)
 lookupHtmlEntity("&euro;");   // "\u20AC" (EURO SIGN)
 lookupHtmlEntity("&fake;");   // null
 ```
+
+Learn more: [HTML Entity Reference](https://unicodefyi.com/search/) · [Unicode Character Search](https://unicodefyi.com/search/)
 
 ## Raw Data Access
 
