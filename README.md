@@ -11,6 +11,10 @@ Look up any Unicode character's name, category, and block. Encode into 17 format
 
 **Zero dependencies. Works in Node.js, Deno, Bun, and all modern browsers.**
 
+<p align="center">
+  <img src="demo.gif" alt="unicodefyi demo — Unicode character encoding and search" width="800">
+</p>
+
 ## Install
 
 ```bash
