@@ -15,6 +15,22 @@ Look up any Unicode character's name, category, and block. Encode into 17 format
   <img src="demo.gif" alt="unicodefyi demo — Unicode character encoding and search" width="800">
 </p>
 
+## Table of Contents
+
+- [Install](#install)
+- [Quick Start](#quick-start)
+- [Character Info](#character-info)
+- [Character Search](#character-search)
+- [17 Encoding Formats](#17-encoding-formats)
+- [Supplementary Plane Characters (Emoji)](#supplementary-plane-characters-emoji)
+- [HTML Entity Lookup](#html-entity-lookup)
+- [Raw Data Access](#raw-data-access)
+- [API Reference](#api-reference)
+- [Learn More About Unicode](#learn-more-about-unicode)
+- [Also Available](#also-available)
+- [FYIPedia Developer Tools](#fyipedia-developer-tools)
+- [License](#license)
+
 ## Install
 
 ```bash
@@ -208,6 +224,13 @@ Map of 2-letter category codes to human-readable names (30 entries).
 
 Map of codepoints to official Unicode character names (~2,950 entries).
 
+## Learn More About Unicode
+
+- **Browse**: [Unicode Search](https://unicodefyi.com/search/) · [Unicode Blocks](https://unicodefyi.com/block/) · [Scripts](https://unicodefyi.com/script/)
+- **Tools**: [Character Lookup](https://unicodefyi.com/tools/lookup/)
+- **API**: [REST API Docs](https://unicodefyi.com/developers/) · [OpenAPI Spec](https://unicodefyi.com/api/openapi.json)
+- **Python**: [PyPI Package](https://pypi.org/project/unicodefyi/)
+
 ## Also Available
 
 - **Python**: [`unicodefyi`](https://pypi.org/project/unicodefyi/) on PyPI -- same 17 encodings + Unicode properties + character search
@@ -215,20 +238,23 @@ Map of codepoints to official Unicode character names (~2,950 entries).
 
 ## FYIPedia Developer Tools
 
-Part of the [FYIPedia](https://github.com/fyipedia) open-source developer tools ecosystem:
+Part of the [FYIPedia](https://fyipedia.com) open-source developer tools ecosystem.
 
-| Package | npm | PyPI | Description |
-|---------|-----|------|-------------|
-| [unicodefyi](https://unicodefyi.com) | `unicodefyi` | [`unicodefyi`](https://pypi.org/project/unicodefyi/) | Unicode character encodings (17 formats) |
-| [colorfyi](https://colorfyi.com) | `colorfyi` | [`colorfyi`](https://pypi.org/project/colorfyi/) | Color conversions, WCAG contrast, 809 named colors |
-| [symbolfyi](https://symbolfyi.com) | `symbolfyi` | [`symbolfyi`](https://pypi.org/project/symbolfyi/) | Symbol encodings (11 formats) + Unicode properties |
-| [emojifyi](https://emojifyi.com) | `emojifyi` | [`emojifyi`](https://pypi.org/project/emojifyi/) | 3,953 emoji metadata + 8 encodings |
-| [fontfyi](https://fontfyi.com) | `fontfyi` | [`fontfyi`](https://pypi.org/project/fontfyi/) | 50 Google Fonts metadata + CSS + pairings |
-| [distancefyi](https://distancefyi.com) | `distancefyi` | [`distancefyi`](https://pypi.org/project/distancefyi/) | Haversine distance, bearing, travel times |
-| [timefyi](https://timefyi.com) | `timefyi` | [`timefyi`](https://pypi.org/project/timefyi/) | Timezone operations, time differences |
-| [namefyi](https://namefyi.com) | `namefyi` | [`namefyi`](https://pypi.org/project/namefyi/) | Korean romanization, Five Elements |
-| [unitfyi](https://unitfyi.com) | `unitfyi` | [`unitfyi`](https://pypi.org/project/unitfyi/) | Unit conversion, 200 units, 20 categories |
-| [holidayfyi](https://holidayfyi.com) | `holidayfyi` | [`holidayfyi`](https://pypi.org/project/holidayfyi/) | Holiday dates, Easter calculation |
+| Package | PyPI | npm | Description |
+|---------|------|-----|-------------|
+| colorfyi | [PyPI](https://pypi.org/project/colorfyi/) | [npm](https://www.npmjs.com/package/@fyipedia/colorfyi) | Color conversion, WCAG contrast, harmonies -- [colorfyi.com](https://colorfyi.com/) |
+| emojifyi | [PyPI](https://pypi.org/project/emojifyi/) | [npm](https://www.npmjs.com/package/emojifyi) | Emoji encoding & metadata for 3,953 emojis -- [emojifyi.com](https://emojifyi.com/) |
+| symbolfyi | [PyPI](https://pypi.org/project/symbolfyi/) | [npm](https://www.npmjs.com/package/symbolfyi) | Symbol encoding in 11 formats -- [symbolfyi.com](https://symbolfyi.com/) |
+| **unicodefyi** | [PyPI](https://pypi.org/project/unicodefyi/) | [npm](https://www.npmjs.com/package/unicodefyi) | Unicode lookup with 17 encodings -- [unicodefyi.com](https://unicodefyi.com/) |
+| fontfyi | [PyPI](https://pypi.org/project/fontfyi/) | [npm](https://www.npmjs.com/package/fontfyi) | Google Fonts metadata & CSS -- [fontfyi.com](https://fontfyi.com/) |
+| distancefyi | [PyPI](https://pypi.org/project/distancefyi/) | [npm](https://www.npmjs.com/package/distancefyi) | Haversine distance & travel times -- [distancefyi.com](https://distancefyi.com/) |
+| timefyi | [PyPI](https://pypi.org/project/timefyi/) | [npm](https://www.npmjs.com/package/timefyi) | Timezone ops & business hours -- [timefyi.com](https://timefyi.com/) |
+| namefyi | [PyPI](https://pypi.org/project/namefyi/) | [npm](https://www.npmjs.com/package/namefyi) | Korean romanization & Five Elements -- [namefyi.com](https://namefyi.com/) |
+| unitfyi | [PyPI](https://pypi.org/project/unitfyi/) | [npm](https://www.npmjs.com/package/unitfyi) | Unit conversion, 220 units -- [unitfyi.com](https://unitfyi.com/) |
+| holidayfyi | [PyPI](https://pypi.org/project/holidayfyi/) | [npm](https://www.npmjs.com/package/holidayfyi) | Holiday dates & Easter calculation -- [holidayfyi.com](https://holidayfyi.com/) |
+| cocktailfyi | [PyPI](https://pypi.org/project/cocktailfyi/) | -- | Cocktail ABV, calories, flavor -- [cocktailfyi.com](https://cocktailfyi.com/) |
+| fyipedia | [PyPI](https://pypi.org/project/fyipedia/) | -- | Unified CLI: `fyi color info FF6B35` -- [fyipedia.com](https://fyipedia.com/) |
+| fyipedia-mcp | [PyPI](https://pypi.org/project/fyipedia-mcp/) | -- | Unified MCP hub for AI assistants -- [fyipedia.com](https://fyipedia.com/) |
 
 ## License
 
