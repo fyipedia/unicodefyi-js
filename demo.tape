@@ -1,20 +1,32 @@
-# unicodefyi — Demo
 Output demo.gif
-
 Set FontSize 14
 Set Width 920
-Set Height 620
+Set Height 580
 Set Shell "zsh"
 Set Theme "Catppuccin Mocha"
-Set TypingSpeed 35ms
+Set TypingSpeed 30ms
 Set Padding 20
 
-Type "cat demo.mjs"
+Type "node"
+Enter
+Sleep 1s
+
+Type "const { getEncodings, charInfo, searchCharacters } = await import('unicodefyi')"
+Enter
+Sleep 1.5s
+
+Type "charInfo('∞')"
 Enter
 Sleep 2.5s
 
-Type "node demo.mjs"
+Type "getEncodings('π')"
 Enter
-Sleep 3s
+Sleep 2.5s
 
-Sleep 2s
+Type "searchCharacters('arrow', 3)"
+Enter
+Sleep 2.5s
+
+Type ".exit"
+Enter
+Sleep 1s
