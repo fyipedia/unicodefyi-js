@@ -1,6 +1,6 @@
 {
   "name": "unicodefyi",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Unicode character lookup and encoding toolkit -- 17 formats (UTF-8, UTF-16, HTML, CSS, JS, Python, Java, Go, Ruby, Rust, C++), character info, name search. Zero dependencies.",
   "type": "module",
   "main": "dist/index.js",
