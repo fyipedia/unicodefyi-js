@@ -138,7 +138,7 @@ Encode any Unicode character into **17 different representations** covering web 
 | UTF-16 BE | `utf16beBytes` | `27 13` | Big-endian UTF-16 bytes |
 | UTF-32 BE | `utf32beBytes` | `00 00 27 13` | Big-endian UTF-32 bytes |
 
-Learn more: [Character Lookup Tool](https://unicodefyi.com/tools/lookup/) · [REST API Docs](https://unicodefyi.com/developers/) · [OpenAPI Spec](https://unicodefyi.com/api/openapi.json)
+Learn more: [REST API Docs](https://unicodefyi.com/developers/) · [OpenAPI Spec](https://unicodefyi.com/api/openapi.json)
 
 ### Supplementary Plane Characters (Emoji)
 
@@ -234,8 +234,7 @@ Map of codepoints to official Unicode character names (~2,950 entries).
 ## Learn More About Unicode
 
 - **Browse**: [Unicode Search](https://unicodefyi.com/search/) · [Unicode Blocks](https://unicodefyi.com/block/) · [Scripts](https://unicodefyi.com/script/)
-- **Tools**: [Character Lookup](https://unicodefyi.com/tools/lookup/)
-- **API**: [REST API Docs](https://unicodefyi.com/developers/) · [OpenAPI Spec](https://unicodefyi.com/api/openapi.json)
+- **Tools**: - **API**: [REST API Docs](https://unicodefyi.com/developers/) · [OpenAPI Spec](https://unicodefyi.com/api/openapi.json)
 - **Python**: [PyPI Package](https://pypi.org/project/unicodefyi/)
 
 ## Also Available
